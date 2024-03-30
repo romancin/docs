@@ -1,8 +1,11 @@
-# Asustor: Creating startup script
+##  Creating startup script
 
+### Prepare directory
 1. Connect by SSH
 2. sudo to root
 3. Create `scripts` directory: `/volume1/.@root/scripts`
+
+### Create script contents
 4. Create the script:
    ```shell
    cat nas_start_shutdown_script.sh
@@ -55,6 +58,7 @@
    esac
    exit 0
    ```
+### Install script
 5. Execute: `/volume1/.@root/scripts/nas_start_shutdown_script.sh install`
 6. It will create:
    ```shell
@@ -64,3 +68,8 @@
    lrwxrwxrwx    1 root     root            52 Mar 26 11:30 S99autostart -> /volume1/.@root/scripts/nas_start_shutdown_script.sh*
    lrwxrwxrwx    1 root     root            52 Mar 26 11:30 K01autostart -> /volume1/.@root/scripts/nas_start_shutdown_script.sh*
    ```
+Done! The script will be executed automatically on startup/shutdown.
+
+## Second Item
+### First Section
+### Second Section
