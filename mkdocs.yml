@@ -19,15 +19,15 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-      primary: teal
+      primary: deep purple
       accent: purple
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
-      primary: teal
-      accent: lime
+      primary: deep purple
+      accent: purple
 
 plugins:
   - search
